@@ -87,6 +87,8 @@ Copy `config.default.toml` to `config.toml` and edit
 1. `keyring_backend`: `sunrised`'s keyring
 1. `sunrised_rpc`: `sunrised`'s RPC URL. To connect to a local chain, use `http://localhost:26657`
 
+Note that if you leave `ipfs_api_url` unset and configure `IPFS_PATH` for your IPFS daemon, you must configure the same `IPFS_PATH` for sunrise-da as well.
+
 ### Only L2 Publisher
 
 1. `publisher_account`: Account to send MetadataUrl of L2 data to Sunrise chain, $RISE balance required.
